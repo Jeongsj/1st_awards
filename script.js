@@ -149,6 +149,12 @@ $.getJSON('hair.json', function(items){
         $("#hair").append(`<div class="item"><img class="ui image" src="./proc/${item.i}.png"><div class="meta">${item.name}</div> </div>`);
     });
 });
+$.getJSON('face.json', function(items){
+    items.sort(() => Math.random() - 0.5);
+    $.each(items, function(i, item){
+        $("#face").append(`<div class="item"><img class="ui image" src="./proc4/${item.i}.png"><div class="meta">${item.name}</div> </div>`);
+    });
+});
 $.getJSON('clothes.json', function(items){
     items.sort(() => Math.random() - 0.5);
     $.each(items, function(i, item){
