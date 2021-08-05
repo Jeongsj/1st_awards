@@ -1,0 +1,243 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>141.world</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QX2VPG8G7H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QX2VPG8G7H');
+    </script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">    
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+          <a href="#" class="ui header item">
+            141.world
+          </a>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="ui main container">
+        <h1 class="ui center aligned header">1st 금손 어워즈</h1>
+
+        <div class="ui pointing secondary menu">
+            <a class="item active" data-tab="first">헤어</a>
+            <a class="item" data-tab="second">성형</a>
+            <a class="item" data-tab="third">의상</a>
+            <a class="item" data-tab="fourth">펫</a>
+            <a class="item final" data-tab="fifth">결과</a>
+            <div class="right menu">
+                <div class="item" id="dev" data-html="<img class='ui medium image' src='https://maple.loona.world/hj.gif'>">
+                © Dev by 무명의&nbsp;<a href="https://namu.wiki/w/%EC%A0%84%ED%9D%AC%EC%A7%84" target="_blank">희진이</a>팬
+                </div>
+            </div>
+        </div>
+
+        <div class="ui bottom attached tab segment active" data-tab="first">
+            <div class="ui massive horizontal divided list" id="hair">
+            </div>
+        </div>
+        
+        <div class="ui tab segment" data-tab="second">
+            <div class="ui container">
+                <div class="ui icon message">
+                    <i class="info circle icon"></i>
+                    <div class="content">
+                      <div class="header">
+                        캐릭터 별 구매 가능!
+                      </div>
+                      <p>구매 가능 횟수가 캐릭터별로 적용됩니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui top attached tabular menu">
+                <a class="item" data-tab="second/a">반지</a>
+                <a class="item" data-tab="second/b">성장</a>
+                <a class="item" data-tab="second/c">치장</a>
+              </div>
+              
+              <div class="ui bottom attached active tab segment" data-tab="second/a">
+                <table class="ui celled table" id="coin11">
+                    <thead>
+                       <th>품목</th>
+                       <th>수량</th>
+                       <th>가격</th>
+                       <th>개수</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+              </div>
+              <div class="ui bottom attached tab segment" data-tab="second/b">
+                <table class="ui celled table" id="coin12">
+                    <thead>
+                       <th>품목</th>
+                       <th>수량</th>
+                       <th>가격</th>
+                       <th>개수</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+              </div>
+              <div class="ui bottom attached tab segment" data-tab="second/c">
+                <table class="ui celled table" id="coin13">
+                    <thead>
+                       <th>품목</th>
+                       <th>수량</th>
+                       <th>가격</th>
+                       <th>개수</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+              </div>
+        </div>
+
+        <div class="ui bottom attached tab segment" data-tab="third">
+            <div class="ui massive horizontal divided list" id="clothes">
+            </div>
+        </div>
+
+        <div class="ui bottom attached tab segment" data-tab="fourth">
+            <div class="ui container">
+                <div class="ui icon message">
+                    <i class="info circle icon"></i>
+                    <div class="content">
+                      <div class="header">
+                        월드 별 구매 가능!
+                      </div>
+                      <p>위시 코인 및 구매 가능 횟수는 월드 내 모든 캐릭터가 공유합니다.</p>
+                    </div>
+                </div>
+                <table class="ui celled table" id="coin3">
+                   <thead>
+                      <th>품목</th>
+                      <th>수량</th>
+                      <th>가격</th>
+                      <th>개수</th>
+                   </thead>
+                   <tbody>
+                      <!--tr>
+                         <td>
+                            <h4 class="ui image header">
+                               <img src="assets/images/wireframe/square-image.png" class="ui mini rounded image">
+                               <div class="content">
+                                메이플 노블 의상 선택권
+                               <div class="sub header">Human Resources</div>
+                            </h4>
+                         </td>
+                         <td>22</td>
+                         <td>22</td>
+                         <td>22</td>
+                      </tr-->
+                   </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="ui bottom attached tab segment" data-tab="fifth">
+            <div class="ui container">
+                
+
+                <h2 class="ui header">
+                    <img src="img/coin.png" class="ui circular image">
+                    계산
+                </h2>
+
+                <br>
+                
+                <div class="ui grid">
+                    <div class="ui calendar" id="date_calendar">
+                        <div class="ui input left icon">
+                          <i class="calendar icon"></i>
+                          <input type="text" placeholder="코인캐기 시작할 날짜">
+                        </div>
+                    </div>
+                    <button class="ui positive button" onclick="$('.ui.modal').modal('show');">
+                        영수증 생성
+                    </button>
+                </div>
+                <br>
+
+                <a href="https://qr.kakaopay.com/281006011000011473949602" target="_blank">
+                    <img class="ui image" src="img/pay.png">
+                </a>
+                
+                <div class="ui container" id="ajaxRes"></div>
+                
+                <div class="ui basic tiny modal">
+                    <div class="ui icon header">
+                      <i class="receipt icon"></i>
+                      영수증 생성
+                    </div>
+                    <div class="content">
+                      <p>생성 후에는 수정이 <span style="color:rgb(236, 28, 97)">불가능</span>하며, 새로고침 후 처음부터 다시 진행하셔야 합니다!</p>
+                    </div>
+                    <div class="actions">
+                      <div class="ui red basic cancel inverted button">
+                        <i class="remove icon"></i>
+                        취소
+                      </div>
+                      <div class="ui green ok inverted button" onclick="if (prev_check()==false) return false; aaaa();this.onclick=null;">
+                        <i class="checkmark icon"></i>
+                        확인
+                      </div>
+                    </div>
+                </div>
+
+
+                <h2 class="ui header">
+                    <img src="img/coin.png" class="ui circular image">
+                    퍼스널, 쉐어 코인샵
+                </h2>
+                <table class="ui celled table" id="tableRes1">
+                    <thead>
+                      <tr>
+                        <th>품목</th>
+                        <th>구매 수량</th>
+                        <th>가격</th>
+                        <th>필요 코인 수</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot></tfoot>
+                </table>
+
+                <h2 class="ui blue header">
+                    <img src="img/wish.png" class="ui aligned circular bordered image">
+                    위시 코인샵
+                </h2>
+                <table class="ui celled table" id="tableRes2">
+                    <thead>
+                      <tr>
+                        <th>품목</th>
+                        <th>구매 수량</th>
+                        <th>가격</th>
+                        <th>필요 코인 수</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot></tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
