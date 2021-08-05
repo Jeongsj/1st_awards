@@ -146,13 +146,13 @@ $(document).ready(function() {
 $.getJSON('hair.json', function(items){
     items.sort(() => Math.random() - 0.5);
     $.each(items, function(i, item){
-        $("#hair").append(`<div class="item"><img class="ui image" src="/proc/${item.i}.png"><div class="meta">${item.name}</div> </div>`);
+        $("#hair").append(`<div class="item"><img class="ui image" src="./proc/${item.i}.png"><div class="meta">${item.name}</div> </div>`);
     });
 });
 $.getJSON('clothes.json', function(items){
     items.sort(() => Math.random() - 0.5);
     $.each(items, function(i, item){
-        $("#clothes").append(`<div class="item"><img class="ui image" src="/proc2/${item.i}.png"><div class="meta">${item.name}</div> </div>`);
+        $("#clothes").append(`<div class="item"><img class="ui image" src="./proc2/${item.i}.png"><div class="meta">${item.name}</div> </div>`);
     });
 });
 $.getJSON('coin3.json', function(items){
