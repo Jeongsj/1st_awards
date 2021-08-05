@@ -155,8 +155,9 @@ $.getJSON('clothes.json', function(items){
         $("#clothes").append(`<div class="item"><img class="ui image" src="./proc2/${item.i}.png"><div class="meta">${item.name}</div> </div>`);
     });
 });
-$.getJSON('coin3.json', function(items){
+$.getJSON('pet.json', function(items){
+    items.sort(() => Math.random() - 0.5);
     $.each(items, function(i, item){
-        $("#coin3>tbody").append(`<tr><td><h4 class="ui image header"> <img src="img/0${item.img}.info.iconRaw.png" class="ui mini rounded image"><div class="content"> ${item.name}<div class="sub header">월드 내 나의 캐릭터간 이동만 가능</div></h4></td><td>${item.cnt}</td><td>${item.price}</td><td><div class="ui action input"> <input type="number" placeholder="0" style="width:100px" min="0"> <button class="ui green button cntMax" onclick="$('#coin3 tr td input').eq(${i}).val(${item.cnt})"> 최대</button></div></td></tr>`);
+        $("#pet").append(`<div class="item"><img class="ui image" src="./proc3/${item.i}.png"><div class="meta">${item.name}</div> </div>`);
     });
 });
